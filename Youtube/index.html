@@ -1,303 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
     <style>
-        * {
-  margin: 10;
-  padding: 0;
-}
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-#navbar {
-  margin-top: 20px;
-  margin-left: 30px;
-  padding: auto;
-  display: flex;
-  flex-direction: row;
+      #navbar {
+        margin-top: 20px;
+        margin-left: 30px;
+        padding: auto;
+        display: flex;
+        flex-direction: row;
+      }
 
- 
+      .menu {
+        padding-top: 10px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+      }
 
-}
+      .logo {
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+      }
 
-.menu {
-  padding-top: 10px;
-  width: 50px;
-  justify-content: center;
-  align-items: center;
+      .search {
+        display: flex;
+        flex-direction: row;
+        padding-left: 120px;
 
-}
+        padding-top: 20px;
+        padding-bottom: 5px;
+      }
 
-.logo {
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px;
+      .button {
+        display: flex;
+        flex-direction: row;
+      }
 
+      .microphone {
+        margin-top: auto;
+        padding-left: 20px;
+      }
 
-}
+      .live {
+        margin-top: auto;
+        padding-left: 300px;
+      }
 
-.search {
-  display: flex;
-  flex-direction: row;
-  padding-left: 120px;
+      .notification {
+        margin-top: auto;
+        padding-left: 30px;
+      }
 
-  padding-top: 20px;
-  padding-bottom: 5px;
+      .profile {
+        margin-top: auto;
+        padding-left: 40px;
+      }
+      .container {
+        width: 100%;
+        height: 2200px;
+        display: flex;
+        flex-direction: row;
+      }
+      .left {
+        width: 15%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+      }
+      .right {
+        width: 100%;
+        height: 2200px;
 
-
-
-}
-
-.button {
-  display: flex;
-  flex-direction: row;
-
-}
-
-.microphone {
-  margin-top: auto;
-  padding-left: 20px;
-}
-
-.live {
-  margin-top: auto;
-  padding-left: 300px;
-}
-
-.notification {
-  margin-top: auto;
-  padding-left: 30px;
-}
-
-.profile {
-  margin-top: auto;
-  padding-left: 40px;
-}
-.container{
-  
-  width: 100%;
-  height: 2200px;
-  display: flex;
-  flex-direction: row;
-  
-
-}
-.left{
- 
-  width: 15%;
-  height:900px;
-  display: flex;
-  flex-direction: column;
-  background-color:white;
-  justify-content: center;
-  text-align: center;
-}
-.right{
-
-  width: 100%;
-  height: 2200px;
-  
-  display: flex;
-  flex-direction: column;
-}
-.left ul li a{
-  color:black;
-  display: block;
-  padding: 9px 10px;
-  border-radius: 10px;
-  border-color: red;
-  text-decoration: none;
-  padding-left: 10px;
-
-}
-.left ul li a:hover{
-  color:black;
-  background-color:rgb(150, 109, 109);
-}
-.left img{
-  padding-right: 10px;
-  padding-top: 20px;
-}
-.videos{
-  margin: 10px;
-  padding: 10px;
-  
-}
-.videos iframe{
-
-  margin: 5px;
-  padding: 5px;
-  
-}
-.videos1{
-  margin: 10px;
-  padding: 10px;
-  
-}
-.videos1 iframe{
-
-  margin: 5px;
-  padding: 5px;
-  
-}
-.videos2{
-  margin: 10px;
-  padding: 10px;
-  
-}
-.videos2 iframe{
-
-  margin: 5px;
-  padding: 5px;
-  
-}
+        display: flex;
+        flex-direction: column;
+      }
+      .left ul li a {
+        color: black;
+        display: block;
+        padding: 9px 10px;
+        border-radius: 10px;
+        border-color: red;
+        text-decoration: none;
+        padding-left: 10px;
+      }
+      .left ul li a:hover {
+        color: black;
+        background-color: rgb(150, 109, 109);
+      }
+      .left img {
+        padding-right: 10px;
+        padding-top: 20px;
+      }
+      .videos {
+        margin: 10px;
+        padding: 10px;
+      }
+      .videos iframe {
+        margin: 5px;
+        padding: 5px;
+      }
+      .videos1 {
+        margin: 10px;
+        padding: 10px;
+      }
+      .videos1 iframe {
+        margin: 5px;
+        padding: 5px;
+      }
+      .videos2 {
+        margin: 10px;
+        padding: 10px;
+      }
+      .videos2 iframe {
+        margin: 5px;
+        padding: 5px;
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav id="navbar">
-        <div class="menu">
-            <i class="fa-solid fa-bars fa-2x"></i>
+      <div class="menu">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </div>
+
+      <div id="logo">
+        <img src="logo.png" height="60px" width="200px" alt="Youtube" />
+      </div>
+      <div class="search"></div>
+      <div class="search">
+        <input
+          type="text"
+          placeholder=" Search"
+          name="search"
+          style="width: 370px; height: 40px; border: 2px solid black"
+        />
+        <div class="button">
+          <button
+            style="
+              height: 44px;
+              width: 60px;
+              background-color: rgb(237, 225, 225);
+            "
+          >
+            <i class="fa fa-search" style="font-size: 25px"> </i>
+          </button>
+        </div>
+        <div class="microphone">
+          <img
+            src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png"
+            height="35px"
+            width="40px"
+          />
         </div>
 
-        <div id="logo">
-            <img src="logo.png" height="60px" width="200px" alt="Youtube">
+        <div class="live">
+          <img
+            src="https://static.thenounproject.com/png/3070950-200.png"
+            height="35px"
+            width="40px"
+          />
         </div>
-        <div class="search">
-
+        <div class="notification">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/565/565422.png"
+            height="35px"
+            width="40px"
+          />
         </div>
-        <div class="search">
-
-
-            <input type="text" placeholder=" Search" name="search"
-                style="width: 370px ;height: 40px; border: 2px solid black;">
-            <div class="button">
-                <button style="height: 44px; width: 60px; background-color: rgb(237, 225, 225);">
-                    <i class="fa fa-search" style="font-size: 25px;">
-                    </i>
-                </button>
-
-            </div>
-            <div class="microphone">
-                <img src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" height="35px"
-                    width="40px">
-            </div>
-
-            <div class="live">
-                <img src="https://static.thenounproject.com/png/3070950-200.png" height="35px" width="40px">
-            </div>
-            <div class="notification">
-                <img src="https://cdn-icons-png.flaticon.com/512/565/565422.png" height="35px" width="40px">
-            </div>
-            <div class="profile">
-                <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/account-profile-user-icon--icon-search-engine-10.png"
-                    height="35px" width="40px">
-            </div>
-
-
+        <div class="profile">
+          <img
+            src="https://www.freeiconspng.com/thumbs/profile-icon-png/account-profile-user-icon--icon-search-engine-10.png"
+            height="35px"
+            width="40px"
+          />
         </div>
+      </div>
     </nav>
     <div class="container">
-
-        <div class="left">
-
-            <ul>
-                <li class="item"><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
-                            height="30px" height="10px"><b>Home</b></a></li><br><br>
-                <li class="item"><a href="#"><img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAAeFBMVEX///8AAABmZmbr6+v5+fn8/PyNjY3v7++AgID19fVsbGygoKDOzs6SkpKdnZ2Hh4ceHh7e3t5XV1empqYnJyfk5OTY2NhDQ0O4uLjHx8cRERFcXFxSUlKvr683Nze9vb11dXUsLCxAQEBKSkpycnI5OTkLCwsbGxsQIKylAAAFVklEQVR4nO2c61bqMBCFm4JCAfEGQhHl4u393/AUFOwhSTu5zqTO91tcmb3SZGdmkixjGIZhGIZhGIZhGIZhGIZhGIZhGIbpGvPNdDjK89FwXPawx4JCuRV1VsMJ9ogiU9wImdW0jz2uePSvFQocmWIPLRZTnQKHufAnvoiXBgUO3GIPMDjLuxYJhFhfYQ8yKOVrqwIVuw4vjZMFRIGDCF2dCfcPQAUq3rAHG4TeCK5AxRB7vP4ZbNvD/p8Se8ie0VuiBrq1JDRZIj1dsgmPVgpUDLBH7ovlylaCrkyEcmetgOjGijDZuyggxBI7AGfu124KCPGMHYIjvdxVAZH4x1AYWyIlT9hx2NO/9aKAEI/YkVijyhTakeqhwdoSKVhjB2PF8tOjBOIVOxwLyplPBYSYYQdkjKslSl+DJ2dLJLPDDsqIuQ9LJJFSRs08SwRjix0YmMKXJZJIpfB25c8SSSSSU/RpiSQK7OggvNhniQDsscMD4NsSXUJ/Oei9hVVACPLtOW0VdHfIp5ECOYI61DMoBuVTW6gfnAOcDSTm2EE2Y1ZCtuMaO8hm7OqHZhBPnzxFkIB6sTGwMzpCfE8YR5CAeI9iP4IExGdBhAVxRt4je02eq6BfWCkDK/BK/TuoeA+qwN0GOz4IQSV4wY4OxD00nNy86jbGDg4IOGuQmxqJ62T6tMFp9EqDrA9POQ+TSJ9+82yiQZYVQ+Bfk7cENT7MNMiyHnAjWSexIxzZmWqQZXPg3FlNiZ8VT4DPjHntR0/QDHSegEGymgcHJqArPBUL4ifGA+CaQn7xw037Va5vnsl/EWCrfKlBZS2gpon66gje8WUN4KaJ+Mlx46IB2DTRrjANnDQAm6aHuFEZAl3gNRpA77eNYsZkCnRB0GoANE2U6+5zdw0q0wS470rZLgEdQqMGlWnatf2DuzjhWAFMKLZoADBNNzGisQR2b7tVg6zX1stEOKUAKze2aTBo3x4oV55BW3yzBjCbQPk6E+T406QBtK2T8t0+yP7YoAE410raLQL2Bq0GJv1spFPNS1sNwGmEI7QTKq3nR6UGsBdhfqFsmLP2HVKhATiteIb0yami33xzRdIAml6u84ERmBGbJqN3oYHhizA/UD4znHjUq/CfBtBy0yWfWIEZUeqadmsaONx0oewUa8zVb978auDQx5bGPDiyVCz4Jw3AGXUVSd3xlL/3bw02bv2cC+SwDFh+ycM/aFCCq9QatsiBgVG/fZNbWCKJRN6A0KVH1z76+ynnVc/Mw95nwQ4PACAf5gT140IWoXOZ/FXfAvouqDUr7BDbADdr2kO9Z3MSXgLqK2KMK03Em5d7ESSg7pNj3Ooi3rka4a4z9casGOsh5aLzgV14CYh3pgHqK85QrjgfCb8gEt8Vw19sE7N77BBbCfIoWA3qq2HFVVgF3sl3bGeBP4Wc+NsXPwR8GWydROosC/gSyp52s0Edox4KODvi3rhOmNcPVpS7ryTAvfsmJFJGOAFt2TbgJpHi8hnvGtyS7j1T4jmDtE3BEl1S+FQgEUsk4U+BNf2zkQbXcvqJj3QskYRld9UFM/JltCZ8ZJE+k7JEMh5MUmKWSIFrqZV4DzIIt0el03n5pQmXU1OSlkiF9QvzI+LlMwMsreJDspZIhU3z7SKVPBkUw9soQuyStkRKDA/QX4lbIjVGZpF85cwSeIa9C5ZIA3CD7IYl0gGZCcOuWCIdrWtChyyRlnnjFtktS6RHf3zqnCXSo3nzad89S9TIUirCDv/OHDhTlNenmxyz0fgPCnCm6A0Iv+HCMAzDMAzDMAzDMAzDMAzDMAzDMIwt/wA0cEgStuUqvAAAAABJRU5ErkJggg=="
-                            height="30px" height="10px"><b><a href="file:///C:/Users/altaf/OneDrive/Desktop/Youtube/Shorts.html">Shorts</a></b></a></li><br><br>
-                <li class="item"><a href="#"><img
-                            src="https://cdn.icon-icons.com/icons2/2248/PNG/512/youtube_subscription_icon_136007.png"
-                            height="30px" height="10px"><b>Subscription</b></a></li><br><br>
-                <hr>
-                <li class="item"><a href="#"><img
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADPz89hYWGWlpalpaXDw8OLi4v8/Pzv7+/p6enT09PZ2dkiIiLy8vJMTExFRUXj4+NycnKvr6+FhYVYWFg6Ojqfn59RUVEKCgpaWlrAwMBCQkJISEg1NTVsbGwVFRUuLi6Pj48HnYJSAAAEGklEQVR4nO3di1raQBCG4QU5JBBCAdFWrVbv/yILta2Kq93DTOYf+n9X4PswEjanDYExxhhjjDHGGGPspabZLMdD17XNQLx2t12NbFrPl/rKbmuk+939VNfXGPuOrWaKwLG17rkHtVGdWtP+dNXrAK+tYS89qhB31qzXXSkMameNettWXnhnbTpJ/BsVakaPraSF1qD3CR/64T5C8S+br9aeSEtJ4MJaE2suKZxZa2KtJYUTa000yX9EgCVFpFZQeGGNidadvXBMIYUUmkchhRTaRyGFFNpH4RDCe1HRaQjC3eybqOltCMJpWHwXRb0JQxjCpajqdSjCoDapacJuf3HSzU5YGBZrUdjf0oSRC9cTaaHWpCIJdSYVShhahUnFEoYwr9LEQhPKX/yAE4b+SxXoXXhC6UlFFMpOKqQwtIKTiimUnFRUodykwgpDK3T3Ea5QalKRhTKTCi0UWftjCyUmFV1YP6nwwuq1P76wdlI9COsm1YUwLCruevQhrJlUL8LySXUjLD5L5UdYOqmehOH27IVFa39fwpIz/96E+ZPqThgWmWt/f8LcSfUozLtG5VIYFhnfqT6FOZPqVZg+qW6FyUd/v8LUSXUsnP04c2HqSsOrMP0MnFNhxorfpzBnLexRmHeO2KEwc/3kT5i7BvYmzPnN7VJYcNbUl7DkfKInYe75C3fCwvP6foSl12a8CPviu2ucCCuukfoQ1lzn9iBsq+6qcSCsvN8EX1j7FAa6sP5JGnChwDMm2EKJ54SQhTJPJQILb2WegsIVSj3JhiosWynFAhUW3VcSD1Mo+VwQolDyiRlIoeCEHsMTSj9jiSasWynFAhMqvD4TSyj/FDCWUOedA0BCpRe84gg1JvQYilDrrRgwQsVXEGMI9d5OgyF8Un0POIJQNwoppNA+Cimk0D4KKaTQPgr9C9P2KEkTPgz/5ye0ERRqrtTLS9srKE0IuCnZaLSSFIJtfvhc4haIacJgtQPwZ0XeBlwh1DqpW1PihlaJws3wgH+Vuk9nohDwiJi6Y1eqEO5DTN5qNVWItBvwr5I3zksWhv3wik9Kf+N8urB/HJzxcRmPG6ULkYjX6cAcYehRBjXxWJ8vBPm6ucvb2TFPGDb2x8WsDzBfeDA+Wf5GXef6CoSHut3lw+muGAO0nYxL9lYtEfqKQv9R6D8K/Ueh/yj0H4X+o9B/FPrvvxTuJ+bln435OMiru6MbQWFrjYl2IShsrDHRJIVBcc/l8kSFiFfoZYVLa00sUWGju8N7WaLCMLXmRJIVIt4NJCxUfEKwNGFh2FqD3iUtbK6sRadJC0OP9n0qLgw92KcoLwwN1v+igvDwjYp00FARHg79OKOqJDz8Rp2rvR0gr72W8FDTdmP78u4JYowxxhhjjDHG2Nn1E2sTe015x+DfAAAAAElFTkSuQmCC"
-                            height="30px" height="10px"><b>Libarary</b></a></li><br><br>
-                <li class="item"><a href="#"><img src="https://thumbs.dreamstime.com/b/history-gray-170719354.jpg"
-                            height="30px" height="10px"><b>History</b></a></li><br><br>
-                <li class="item"><a href="#"><img
-                            src="https://www.clipartmax.com/png/middle/234-2340077_200-icons-look-forward-to-regular-new-releases-during-youtube-video-icon.png"
-                            height="30px" height="10px"><b>Your Videos</b></a></li><br><br>
-                <li class="item"><a href="#"><img
-                            src="https://cdn.iconscout.com/icon/free/png-256/watch-later-1781603-1513853.png"
-                            height="30px" height="10px"><b>Watch Later</b></a></li><br><br>
-                <li class="item"><a href="#"><img
-                            src="https://www.freeiconspng.com/thumbs/youtube-like-png/youtube-like-button-png-11.png"
-                            height="30px" height="10px"><b>Liked Videos</b></a></li><br><br>
-                            <hr>
-
-            </ul>
-
+      <div class="left">
+        <ul>
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/25/25694.png"
+                height="30px"
+                height="10px"
+              /><b>Home</b></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="data:image/png;base64,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"
+                height="30px"
+                height="10px"
+              /><b
+                ><a
+                  href="file:///C:/Users/altaf/OneDrive/Desktop/Youtube/Shorts.html"
+                  >Shorts</a
+                ></b
+              ></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://cdn.icon-icons.com/icons2/2248/PNG/512/youtube_subscription_icon_136007.png"
+                height="30px"
+                height="10px"
+              /><b>Subscription</b></a
+            >
+          </li>
+          <br /><br />
+          <hr />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADPz89hYWGWlpalpaXDw8OLi4v8/Pzv7+/p6enT09PZ2dkiIiLy8vJMTExFRUXj4+NycnKvr6+FhYVYWFg6Ojqfn59RUVEKCgpaWlrAwMBCQkJISEg1NTVsbGwVFRUuLi6Pj48HnYJSAAAEGklEQVR4nO3di1raQBCG4QU5JBBCAdFWrVbv/yILta2Kq93DTOYf+n9X4PswEjanDYExxhhjjDHGGGPspabZLMdD17XNQLx2t12NbFrPl/rKbmuk+939VNfXGPuOrWaKwLG17rkHtVGdWtP+dNXrAK+tYS89qhB31qzXXSkMameNettWXnhnbTpJ/BsVakaPraSF1qD3CR/64T5C8S+br9aeSEtJ4MJaE2suKZxZa2KtJYUTa000yX9EgCVFpFZQeGGNidadvXBMIYUUmkchhRTaRyGFFNpH4RDCe1HRaQjC3eybqOltCMJpWHwXRb0JQxjCpajqdSjCoDapacJuf3HSzU5YGBZrUdjf0oSRC9cTaaHWpCIJdSYVShhahUnFEoYwr9LEQhPKX/yAE4b+SxXoXXhC6UlFFMpOKqQwtIKTiimUnFRUodykwgpDK3T3Ea5QalKRhTKTCi0UWftjCyUmFV1YP6nwwuq1P76wdlI9COsm1YUwLCruevQhrJlUL8LySXUjLD5L5UdYOqmehOH27IVFa39fwpIz/96E+ZPqThgWmWt/f8LcSfUozLtG5VIYFhnfqT6FOZPqVZg+qW6FyUd/v8LUSXUsnP04c2HqSsOrMP0MnFNhxorfpzBnLexRmHeO2KEwc/3kT5i7BvYmzPnN7VJYcNbUl7DkfKInYe75C3fCwvP6foSl12a8CPviu2ucCCuukfoQ1lzn9iBsq+6qcSCsvN8EX1j7FAa6sP5JGnChwDMm2EKJ54SQhTJPJQILb2WegsIVSj3JhiosWynFAhUW3VcSD1Mo+VwQolDyiRlIoeCEHsMTSj9jiSasWynFAhMqvD4TSyj/FDCWUOedA0BCpRe84gg1JvQYilDrrRgwQsVXEGMI9d5OgyF8Un0POIJQNwoppNA+Cimk0D4KKaTQPgr9C9P2KEkTPgz/5ye0ERRqrtTLS9srKE0IuCnZaLSSFIJtfvhc4haIacJgtQPwZ0XeBlwh1DqpW1PihlaJws3wgH+Vuk9nohDwiJi6Y1eqEO5DTN5qNVWItBvwr5I3zksWhv3wik9Kf+N8urB/HJzxcRmPG6ULkYjX6cAcYehRBjXxWJ8vBPm6ucvb2TFPGDb2x8WsDzBfeDA+Wf5GXef6CoSHut3lw+muGAO0nYxL9lYtEfqKQv9R6D8K/Ueh/yj0H4X+o9B/FPrvvxTuJ+bln435OMiru6MbQWFrjYl2IShsrDHRJIVBcc/l8kSFiFfoZYVLa00sUWGju8N7WaLCMLXmRJIVIt4NJCxUfEKwNGFh2FqD3iUtbK6sRadJC0OP9n0qLgw92KcoLwwN1v+igvDwjYp00FARHg79OKOqJDz8Rp2rvR0gr72W8FDTdmP78u4JYowxxhhjjDHG2Nn1E2sTe015x+DfAAAAAElFTkSuQmCC"
+                height="30px"
+                height="10px"
+              /><b>Libarary</b></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://thumbs.dreamstime.com/b/history-gray-170719354.jpg"
+                height="30px"
+                height="10px"
+              /><b>History</b></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://www.clipartmax.com/png/middle/234-2340077_200-icons-look-forward-to-regular-new-releases-during-youtube-video-icon.png"
+                height="30px"
+                height="10px"
+              /><b>Your Videos</b></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://cdn.iconscout.com/icon/free/png-256/watch-later-1781603-1513853.png"
+                height="30px"
+                height="10px"
+              /><b>Watch Later</b></a
+            >
+          </li>
+          <br /><br />
+          <li class="item">
+            <a href="#"
+              ><img
+                src="https://www.freeiconspng.com/thumbs/youtube-like-png/youtube-like-button-png-11.png"
+                height="30px"
+                height="10px"
+              /><b>Liked Videos</b></a
+            >
+          </li>
+          <br /><br />
+          <hr />
+        </ul>
+      </div>
+      <div class="right">
+        <div class="videos">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6mbwJ2xhgzM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/6yAsGCaQkp4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HcOc7P5BMi4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YrI9k1yFxgo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="right">
 
-            <div class="videos">
-                  
-              
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6mbwJ2xhgzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6yAsGCaQkp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YrI9k1yFxgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-            </div>
-
-
-
-            <div class="videos1">
-                  
-              
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cbaXfm08lIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QKJkxHPrDew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/oB0-CdUIRlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/98rr4KeEJ20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               
-
-
-            </div>
-            
-
-
-            <div class="videos1">
-                  
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PlzN8x2fBZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/OffDVCJwnhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hKB-YGF14SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/H26S3ZGEvpc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-               
-
-
-            </div>
-
-
-
-
-
-
+        <div class="videos1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cbaXfm08lIA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/QKJkxHPrDew"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/oB0-CdUIRlM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/98rr4KeEJ20"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
 
-
-
-
-
-
-
-
-
+        <div class="videos1">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PlzN8x2fBZU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/OffDVCJwnhw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/hKB-YGF14SY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/H26S3ZGEvpc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
-
-
-
-
-</body>
-
+  </body>
 </html>
